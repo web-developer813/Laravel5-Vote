@@ -1,0 +1,603 @@
+/* COLORS
+
+Blue : 4a476b
+Red: d46f46
+
+
+
+
+ */
+
+	body {
+		background-color: #eeece1;
+		color: #666273;
+		font-family: "goudy-old-style",serif;
+		font-size: 62.5%;
+		margin: 15px;
+	}
+
+	#top,#bottom,#left,#right {
+		display: none;
+	}
+
+	.content {
+		max-width: 1000px;
+		width: 90%;
+		margin: 40px auto;
+		font-size: 1.6em;
+	}
+
+	.clear {
+		clear: both;
+	}
+
+	img {
+		max-width: 100%;
+	}
+
+	a {
+		font-family: "orator-std";
+		text-transform: uppercase;
+		color: #4a476b;
+		text-decoration: none;
+	}
+
+	a:hover {
+		text-decoration: underline;
+	}
+
+	.red {
+		color: #d46f46;
+	}
+
+	.blue {
+		color: #4a476b;
+	}
+
+	.tan {
+		color: #aba89a;
+	}
+
+	/* ----- Head/Nav ------ */
+	.tiny-header {
+		height: 40px;
+		width: 100%;
+		margin-bottom: 80px;
+		margin-top: 30px;
+		position: relative;
+	}
+
+	.tiny-header .site-title {
+		width: 180px;
+		text-indent: -99999px;
+		background-image: url(/img/countmein.png);
+		height: 100%;
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: center center;
+		margin: 0 auto;
+		position: absolute;
+		top: 0;
+		left: calc(50% - 90px);
+	}
+
+	.tiny-header .social {
+		float: right;
+		margin-top: 10px;
+		margin-right: 20px;
+		display: inline-block;
+	}
+
+	.tiny-header .social img {
+		height: 20px;
+		margin-right: 10px;
+	}
+
+	.tiny-header .nav {
+		float: left;
+		margin-left: 30px;
+		margin-top: 12px;
+		font-size: 1.4em;
+		display: inline-block;
+	}
+
+	.tiny-header .nav a {
+		color: #4a476b;
+		visibility: visible;
+	}
+
+	.count-me-in {
+		width: 100%;
+		max-width: 450px;
+		text-indent: -99999px;
+		background-image: url(/img/countmein.png);
+		background-size: contain;
+		background-position: center center;
+		background-repeat: no-repeat;
+		height: 100px;
+		margin: 0 auto;
+		margin-bottom: 30px;
+		margin-top: -60px;
+	}
+
+	h2.home {
+		margin-bottom: 50px;
+	}
+
+	.button {
+		display: inline-block;
+		margin: 20px;
+		padding: 10px 20px;
+		border: 1px #d46f46 solid;
+		position: relative;
+	}
+
+	.button.blue {
+		border: 1px #4a476b solid;
+	}
+
+	.button:before {
+		content: '';
+		position: absolute;
+		z-index: -1;
+		background: #fff;
+		top: 0px;
+		left: 0px;
+		width: 100%;
+		height: 100%;
+	}
+
+	/*
+	.button:hover {
+	    top: 5px;
+	    left: 5px;
+	}
+
+	.button:hover:before {
+	    top: 0px;
+	    left: 0px;
+	}
+	*/
+	.share .button {
+		display: inline-block;
+		margin: 10px;
+		padding: 10px 16px;
+		border: 1px #4a476b solid;
+		position: relative;
+		border-radius: 50%;
+	}
+
+	.share .button.twitter {
+		padding: 10px 12px;
+	}
+
+	.share .button.linkedin {
+		padding: 10px 13px;
+	}
+
+	.share .button img {
+		width: 18px;
+	}
+
+	.share .button img.facebook {
+		width: 10px;
+	}
+
+	.share .button:before {
+		border-radius: 50%;
+	}
+
+	.share p {
+		font-family: "Orator STD";
+		text-transform: uppercase;
+		font-size: 1em !important;
+		margin-bottom: 10px !important;
+		display: inline-block;
+		position: relative;
+	}
+
+	.share p:before,.share p:after {
+		content: "";
+		position: absolute;
+		height: 1px;
+		border-bottom: 1px solid #4a476b;
+		top: 9px;
+		width: 50px;
+	}
+
+	.share p:before {
+		right: 100%;
+		margin-right: 15px;
+	}
+
+	.share p:after {
+		left: 100%;
+		margin-left: 15px;
+	}
+
+	/* ------- header -----*/
+	.title {
+		font-weight: 100;
+		font-size: 2em;
+	}
+
+	/* ----- State List ----- */
+	.state-list {
+		width: 100%;
+		margin-top: 40px;
+	}
+
+	.state-option {
+		float: left;
+		width: calc(20% - 40px);
+		padding: 20px;
+		margin-top: 40px;
+	}
+
+	.state-option .state-image {
+		max-width: 70%;
+		height: 120px;
+		margin: 0 auto;
+		background-size: contain;
+		background-position: center center;
+		background-repeat: no-repeat;
+	}
+
+	.state-option .state-name {
+		text-align: center;
+	}
+
+	/* ----- State header ----- */
+	.state-header,.forecast,.your-vote-matters,.share,.register,.title {
+		text-align: center;
+	}
+
+	.state-header p,.forecast p,.your-vote-matters p,.register p {
+		max-width: 600px;
+		margin: 0 auto;
+		font-size: 1.4em;
+		line-height: 1.7em;
+		font-weight: 100;
+		margin-bottom: 40px;
+	}
+
+	.register p {
+		margin-bottom: 0px;
+	}
+
+	.state-header .title,h1 {
+		font-size: 3em;
+		font-weight: 100;
+	}
+
+	h2 {
+		font-weight: 100;
+		max-width: 600px;
+		margin: 0 auto;
+		font-size: 1.8em;
+		font-style: italic;
+	}
+
+	.state-image {
+		width: 200px;
+		height: 200px;
+		background-size: contain;
+		background-repeat: no-repeat;
+		margin: 0 auto;
+		margin-top: 30px;
+		margin-bottom: 30px;
+		background-position: center center;
+	}
+
+	/* -------- Data / Table ------- */
+	.hillary-img,.donald-img {
+		width: 300px;
+		height: 300px;
+		background-size: contain;
+		background-repeat: no-repeat;
+		positin: relative;
+	}
+
+	.hillary-img {
+		float: left;
+		background-image: url(/img/hillary.png);
+	}
+
+	.donald-img {
+		float: right;
+		background-image: url(/img/trump.png);
+	}
+
+	.forecast .title {
+		margin-bottom: 60px;
+	}
+
+	.forecast-bar {
+		width: 100%;
+		height: 40px;
+		background-color: #d46f46;
+		margin-top: 40px;
+	}
+
+	.forecast-bar .H {
+		background-color: #4a476b;
+		height: 100%;
+	}
+
+	.hillary-projection,.trump-projection {
+		font-family: "orator-std";
+		text-transform: uppercase;
+		font-size: 1.3em;
+	}
+
+	.hillary-projection {
+		float: left;
+		text-align: left;
+	}
+
+	.trump-projection {
+		float: right;
+		text-align: right;
+	}
+
+	.facts {
+		margin-top: 100px;
+	}
+
+	.fact-table {
+		border: 2px #666273 solid;
+		width: 100%;
+		margin-top: 30px;
+		margin-bottom: 80px;
+	}
+
+	.fact-table p {
+		margin: 0;
+	}
+
+	.table {
+		display: table;
+		width: 100%;
+		table-layout: fixed;
+	}
+
+	.table-row {
+		display: table-row;
+		width: 100%;
+		font-family: "orator-std";
+	}
+
+	.summary {
+		width: 100%;
+		display: inline-block;
+	}
+
+	.table-padding {
+		padding: 20px;
+	}
+
+	.electoral-votes {
+		width: 30%;
+		font-family: "orator-std";
+		text-align: center;
+		display: table-cell;
+		vertical-align: middle;
+	}
+
+	.electoral-votes .table-padding {
+		padding: 40px 20px;
+	}
+
+	.electoral-votes .number {
+		font-family: "goudy-old-style";
+		font-size: 6em;
+	}
+
+	.turnout {
+		width: calc(70% - 2px);
+		display: table-cell;
+		border-left: 2px #666273 solid;
+		font-family: "goudy-old-style";
+		vertical-align: middle;
+		font-size: 1.4em;
+	}
+
+	.turnout em {
+		font-size: 1.6em;
+	}
+
+	.poll {
+		width: calc(20% - 40px);
+		display: table-cell;
+		padding: 20px;
+		vertical-align: top;
+		font-size: .8em;
+	}
+
+	.poll a {
+		margin-bottom: 10px;
+		display: inline-block;
+	}
+
+	.poll canvas {
+		margin-left: -70px;
+		margin-top: -20px;
+		margin-bottom: 10px;
+		width: 250px;
+	}
+
+	.point {
+		width: calc(10% - 40px);
+		display: table-cell;
+		padding: 20px;
+		vertical-align: middle;
+	}
+
+	.dot {
+		width: 50px;
+		height: 50px;
+		text-align: center;
+		background-color: #cdcbca;
+		color: #4a476b;
+		font-weight: 600;
+		font-size: 1.3em;
+		line-height: 50px;
+		border-radius: 50%;
+		margin-bottom: 20px;
+	}
+
+	.dot.R {
+		background-color: #e9d4c3;
+		color: #d46f46;
+	}
+
+	.point p {
+		margin-left: 5px;
+	}
+
+	.table-title {
+		font-family: "orator-std";
+		text-transform: uppercase;
+		width: calc(100% - 40px);
+		padding: 20px;
+		border-top: 2px #666273 solid;
+		display: inline-block;
+		margin: 0;
+	}
+
+	.source {
+		text-align: right;
+		margin-top: 50px;
+	}
+
+	.source a {
+		color: #d3cfbb;
+	}
+
+	.register {
+		border: 2px #666273 solid;
+		max-width: 600px;
+		margin: 0 auto;
+		margin-top: 80px;
+		padding: 40px;
+	}
+
+
+
+@media (min-width:700px) {
+	#top,#bottom,#left,#right {
+		background: #444257;
+		position: fixed;
+		display: inline-block;
+	}
+
+	#left,#right {
+		top: 0;
+		bottom: 0;
+		width: 15px;
+	}
+
+	#left {
+		left: 0;
+	}
+
+	#right {
+		right: 0;
+	}
+
+	#top,#bottom {
+		left: 0;
+		right: 0;
+		height: 15px;
+	}
+
+	#top {
+		top: 0;
+	}
+
+	#bottom {
+		bottom: 0;
+	}
+}
+
+
+
+@media (max-width:700px) {
+
+
+.tiny-header { margin-bottom: 20px;     margin-top: 20px;}
+.tiny-header .nav {    margin-left: 8px;}
+.tiny-header .nav .back {     display: block; text-indent: -9999px;line-height: 0px;}
+.tiny-header .nav .back:after {
+  content: '<';
+  text-indent: 0;
+   display: block;
+  line-height: initial;
+
+}
+.tiny-header .social {    margin-right: 0px; display:none;}
+.tiny-header .site-title {       width: 140px; left: calc(50% - 70px);}
+.tiny-header .social img {    margin-top: 2px;}
+.content {margin-top:0px;	width: 100%; max-width: 100%;}
+.content.home { margin-top:0px; }
+
+.state-image {
+	width: 150px;
+    height: 120px;
+}
+
+.state-header .title, h1{ font-size: 2.2em; margin-top:50px;}
+.title.count-me-in { margin: 10px; margin-bottom:0px; width:calc(100% - 20px);}
+
+h2 {    font-size: 1.4em;}
+
+.state-header p, .forecast p, .your-vote-matters p, {margin-bottom:30px; font-size: 1.2em;}
+
+.hillary-img, .donald-img {
+    width: 130px;
+    height: 130px;
+}
+
+.hillary-projection, .trump-projection { font-size:1em; }
+
+.title {    font-size: 1.6em;}
+
+.state-header, .forecast, .your-vote-matters { margin-bottom: 60px;}
+
+.turnout {    font-size: 1.2em;     line-height: 1.4em;}
+.electoral-votes .number {    font-size: 4em;}
+.electoral-votes p {    font-size: 0.8em;}
+
+.poll {    width: calc(50% - 40px);
+    display: inline-block;
+    padding: 20px;
+    vertical-align: top;
+    font-size: .8em;
+}
+
+.point {
+    width: calc(10%);
+    display: inline-block;
+    padding: 20px;
+    margin: 20px;
+    vertical-align: middle;
+
+}
+.source {
+	margin-top: 0px;
+}
+
+.state-option {
+    float: left;
+    width: calc(33% - 40px);
+    padding: 20px;
+    margin-top: 40px;
+}
+
+.state-option .state-image {
+	max-width:100%;
+}
+
+
+
+}
